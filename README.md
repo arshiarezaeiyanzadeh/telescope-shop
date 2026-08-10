@@ -12,5 +12,7 @@ Fully Responsive: Seamlessly adapts to all screen sizes—from mobile devices to
 Pure CSS Effects: Built with modern CSS techniques including flexbox, clamp() typography, CSS gradients, and interactive hover animations.
 
 Feel free to explore the repository and live demo!
+
+
 <img width="1439" height="2560" alt="screen" src="https://github.com/user-attachments/assets/3981474a-beef-412d-bd84-598e7ac2f175" />
 
