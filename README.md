@@ -1,18 +1,64 @@
-# telescope-shop
-Cosmic Optics – Telescope E-Commerce Store 🔭✨
+content = """<div align="center">
 
-Welcome to my very first web development project! Built entirely from scratch using pure HTML5 and CSS3, this project is a fully responsive e-commerce platform designed for astronomy enthusiasts and high-end telescope buyers.
+<h1 style="font-family: 'Poppins', sans-serif; color: #a855f7;">🌌 Cosmic Optics 🔭</h1>
+<h3 style="font-family: 'Poppins', sans-serif;">A Modern, Space-Themed Telescope E-Commerce Store</h3>
 
-Key Highlights:
+<p style="font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 1.8; max-width: 800px; margin: 0 auto;">
+Welcome to my very first web development project! Built entirely from scratch using pure <b>HTML5</b> and <b>CSS3</b>, this project is a fully responsive e-commerce platform designed for astronomy enthusiasts and high-end telescope buyers.
+</p>
 
-100% Custom Design & Layout: Designed with full creative freedom, featuring a cosmic black hole visual effect, dark glassmorphism cards, and modern layout aesthetics.
+<br>
 
-Fully Responsive: Seamlessly adapts to all screen sizes—from mobile devices to ultra-wide monitors.
+<h2 style="font-family: 'Poppins', sans-serif;">🛠️ Built With</h2>
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
+</p>
 
-Pure CSS Effects: Built with modern CSS techniques including flexbox, clamp() typography, CSS gradients, and interactive hover animations.
+<br>
 
-Feel free to explore the repository and live demo!
+<h2 style="font-family: 'Poppins', sans-serif;">📸 Project Previews</h2>
 
+<h3 style="font-family: 'Poppins', sans-serif;">🏠 Home Page</h3>
+<br>
+<img src="photo_2026-08-11_01-18-43.jpg-home.jpg" alt="Home Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(168, 85, 247, 0.4); margin-bottom: 30px;" />
 
-<img width="1439" height="2560" alt="screen" src="https://github.com/user-attachments/assets/3981474a-beef-412d-bd84-598e7ac2f175" />
+<br><br>
 
+<h3 style="font-family: 'Poppins', sans-serif;">🛍️ Products Page</h3>
+<br>
+<img src="photo_2026-08-11_01-16-49.jpg-products.jpg" alt="Products Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(168, 85, 247, 0.4); margin-bottom: 30px;" />
+
+<br><br>
+
+<h3 style="font-family: 'Poppins', sans-serif;">🎬 About Page</h3>
+<br>
+<img src="photo_2026-08-11_01-19-30.jpg-about.jpg" alt="About Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(168, 85, 247, 0.4); margin-bottom: 30px;" />
+
+<br><br>
+
+<h3 style="font-family: 'Poppins', sans-serif;">🔐 Login Page</h3>
+<br>
+<img src="photo_2026-08-11_01-17-10.jpg-login.jpg" alt="Login Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(168, 85, 247, 0.4); margin-bottom: 30px;" />
+
+<br><br>
+
+<h2 style="font-family: 'Poppins', sans-serif;">✨ Key Highlights</h2>
+<div style="font-family: 'Poppins', sans-serif; display: inline-block; text-align: left; padding: 20px;">
+  <p>✔️ <b>100% Custom Design & Layout:</b> Designed with full creative freedom, featuring a cosmic black hole visual effect, dark glassmorphism cards, and modern layout aesthetics.</p>
+  <p>✔️ <b>Fully Responsive:</b> Seamlessly adapts to all screen sizes—from mobile devices to ultra-wide monitors.</p>
+  <p>✔️ <b>Pure CSS Effects:</b> Built with modern CSS techniques including flexbox, clamp() typography, CSS gradients, and interactive hover animations.</p>
+</div>
+
+<br><br>
+<hr>
+<p style="font-family: 'Poppins', sans-serif;">
+  Feel free to explore the repository and live demo! 🚀
+</p>
+
+</div>"""
+
+with open('README-v3.md', 'w', encoding='utf-8') as f:
+    f.write(content)
+print("README-v3.md created successfully.")
