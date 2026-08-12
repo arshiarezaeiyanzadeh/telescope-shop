@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1 style="font-family: 'Poppins', sans-serif; color: #a855f7;">🌌 telescope shop 🔭</h1>
+<h1 style="font-family: 'Poppins', sans-serif; color: #a855f7;">🌌 Telescope shop 🔭</h1>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
