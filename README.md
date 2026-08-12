@@ -22,19 +22,22 @@ Welcome to my very first web development project! Built entirely from scratch us
 
 <h3 style="font-family: 'Poppins', sans-serif;">🏠 Home Page</h3>
 <br>
-<img src="photo_2026-08-11_01-18-43.jpg-home.jpg" alt="Home Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(168, 85, 247, 0.4); margin-bottom: 30px;" />
+<img src="![Uploading photo_2026-08-11_01-14-53-home.jpg…]()
+" alt="Home Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(168, 85, 247, 0.4); margin-bottom: 30px;" />
 
 <br><br>
 
 <h3 style="font-family: 'Poppins', sans-serif;">🛍️ Products Page</h3>
 <br>
-<img src="photo_2026-08-11_01-16-49.jpg-products.jpg" alt="Products Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(168, 85, 247, 0.4); margin-bottom: 30px;" />
+<img src="![Uploading photo_2026-08-11_01-16-49.jpg-products.jpg…]()
+" alt="Products Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(168, 85, 247, 0.4); margin-bottom: 30px;" />
 
 <br><br>
 
 <h3 style="font-family: 'Poppins', sans-serif;">🎬 About Page</h3>
 <br>
-<img src="photo_2026-08-11_01-19-30.jpg-about.jpg" alt="About Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(168, 85, 247, 0.4); margin-bottom: 30px;" />
+<img src="
+" alt="About Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(168, 85, 247, 0.4); margin-bottom: 30px;" />
 
 <br><br>
 
@@ -59,6 +62,3 @@ Welcome to my very first web development project! Built entirely from scratch us
 
 </div>"""
 
-with open('README-v3.md', 'w', encoding='utf-8') as f:
-    f.write(content)
-print("README-v3.md created successfully.")
