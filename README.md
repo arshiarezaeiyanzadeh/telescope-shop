@@ -4,7 +4,7 @@ content = """<div align="center">
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=22&duration=3000&pause=1000&color=0071FF&center=true&vCenter=true&width=600&lines=Cosmic+Optics+%E2%80%93+Telescope+E-Commerce+Store;First+Frontend+Web+Development+Project;Built+with+Pure+HTML5+%26+CSS3;Fully+Responsive+%26+Space-Themed+UI" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Nanum+Gothic&weight=700&size=22&duration=3000&pause=1000&color=0071FF&center=true&vCenter=true&width=600&lines=Cosmic+Optics+%E2%80%93+Telescope+E-Commerce+Store;First+Frontend+Web+Development+Project;Built+with+Pure+HTML5+%26+CSS3;Fully+Responsive+%26+Space-Themed+UI" alt="Typing SVG" />
   </a>
 </p>
 
