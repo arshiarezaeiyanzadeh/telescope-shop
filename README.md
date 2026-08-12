@@ -1,7 +1,12 @@
 content = """<div align="center">
 
 <h1 style="font-family: 'Poppins', sans-serif; color: #a855f7;">🌌 Cosmic Optics 🔭</h1>
-<h3 style="font-family: 'Poppins', sans-serif;">A Modern, Space-Themed Telescope E-Commerce Store</h3>
+
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=22&duration=3000&pause=1000&color=0071FF&center=true&vCenter=true&width=600&lines=Cosmic+Optics+%E2%80%93+Telescope+E-Commerce+Store;First+Frontend+Web+Development+Project;Built+with+Pure+HTML5+%26+CSS3;Fully+Responsive+%26+Space-Themed+UI" alt="Typing SVG" />
+  </a>
+</p>
 
 <p style="font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 1.8; max-width: 800px; margin: 0 auto;">
 Welcome to my very first web development project! Built entirely from scratch using pure <b>HTML5</b> and <b>CSS3</b>, this project is a fully responsive e-commerce platform designed for astronomy enthusiasts and high-end telescope buyers.
