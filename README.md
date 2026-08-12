@@ -22,7 +22,7 @@ Welcome to my very first web development project! Built entirely from scratch us
 
 <h3 style="font-family: 'Poppins', sans-serif;">🏠 Home Page</h3>
 <br>
-<img src="![Uploading photo_2026-08-11_01-14-53-home.jpg…]()
+<img src="C:\html cc projects\first project\photo_2026-08-11_01-14-53-home.jpg
 " alt="Home Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(168, 85, 247, 0.4); margin-bottom: 30px;" />
 
 <br><br>
