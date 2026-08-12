@@ -1,4 +1,4 @@
-content = """<div align="center">
+<div align="center">
 
 <h1 style="font-family: 'Poppins', sans-serif; color: #a855f7;">🌌 Cosmic Optics 🔭</h1>
 
