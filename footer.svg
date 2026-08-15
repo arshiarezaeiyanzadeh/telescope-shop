@@ -1,54 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" width="100%" height="100%" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280" width="100%" height="100%">
   <defs>
-    <linearGradient id="purpleGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#BF00FF" stop-opacity="0.5" />
-      <stop offset="50%" stop-color="#FF00FF" stop-opacity="0.35" />
-      <stop offset="100%" stop-color="#9400D3" stop-opacity="0.55" />
+    <!-- ۱. تعریف ۴ رنگ اصلی بنفش درخواستی -->
+    <linearGradient id="wavePurpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#800080" stop-opacity="0.85" />
+      <stop offset="33%" stop-color="#9400D3" stop-opacity="0.75" />
+      <stop offset="66%" stop-color="#BF00FF" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#FF00FF" stop-opacity="0.85" />
     </linearGradient>
 
-    <linearGradient id="purpleGrad2" x1="100%" y1="0%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#FF00FF" stop-opacity="0.4" />
-      <stop offset="50%" stop-color="#800080" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#BF00FF" stop-opacity="0.3" />
+    <linearGradient id="backWaveGrad" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#BF00FF" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#800080" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#9400D3" stop-opacity="0.4" />
     </linearGradient>
 
-    <linearGradient id="purpleGrad3" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#9400D3" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#800080" stop-opacity="0.75" />
+    <!-- ۲. هاله عمودی شفاف‌کننده و درخشان -->
+    <linearGradient id="verticalHaloGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
     </linearGradient>
+
+    <!-- ۳. برش اختصاصی فرم موج برای محدود کردن ستاره‌ها فقط داخل موج -->
+    <clipPath id="waveClip">
+      <path>
+        <animate attributeName="d" dur="8s" repeatCount="indefinite"
+          values="
+            M0,130 C320,70 420,190 720,130 C1020,70 1120,190 1440,130 L1440,280 L0,280 Z;
+            M0,160 C300,210 450,80 720,150 C990,220 1140,90 1440,160 L1440,280 L0,280 Z;
+            M0,110 C350,60 400,200 720,120 C1040,40 1100,180 1440,110 L1440,280 L0,280 Z;
+            M0,130 C320,70 420,190 720,130 C1020,70 1120,190 1440,130 L1440,280 L0,280 Z
+          " />
+      </path>
+    </clipPath>
   </defs>
 
-  <image href="universe.jpg" width="1440" height="320" preserveAspectRatio="xMidYMid slice" />
-
-  <rect width="1440" height="320" fill="#000000" opacity="0.25" />
-
-
-  <path fill="url(#purpleGrad1)">
-    <animate attributeName="d" dur="10s" repeatCount="indefinite"
+  <!-- لایه موج پس‌زمینه کمکی برای عمق فضایی -->
+  <path fill="url(#backWaveGrad)">
+    <animate attributeName="d" dur="11s" repeatCount="indefinite"
       values="
-        M0,192L48,176C96,160,192,128,288,138.7C384,149,480,203,576,202.7C672,203,768,149,864,133.3C960,117,1056,139,1152,160C1248,181,1344,203,1392,213.3L1440,224L1440,320L0,320Z;
-        M0,138.7C48,149,96,203,192,202.7C288,203,384,149,480,133.3C576,117,672,139,768,160C864,181,960,203,1056,213.3C1152,224,1248,192,1344,176L1440,160L1440,320L0,320Z;
-        M0,192L48,176C96,160,192,128,288,138.7C384,149,480,203,576,202.7C672,203,768,149,864,133.3C960,117,1056,139,1152,160C1248,181,1344,203,1392,213.3L1440,224L1440,320L0,320Z
+        M0,160 C360,90 540,220 900,150 C1160,100 1300,210 1440,160 L1440,280 L0,280 Z;
+        M0,120 C280,190 600,100 860,170 C1120,240 1320,110 1440,120 L1440,280 L0,280 Z;
+        M0,160 C360,90 540,220 900,150 C1160,100 1300,210 1440,160 L1440,280 L0,280 Z
       " />
   </path>
 
+  <!-- محتویات اصلی محصور در داخل موج -->
+  <g clip-path="url(#waveClip)">
+    <!-- پس‌زمینه مشکی عمیق کیهانی -->
+    <rect width="1440" height="280" fill="#04020a" />
 
-  <path fill="url(#purpleGrad2)">
-    <animate attributeName="d" dur="7s" repeatCount="indefinite"
-      values="
-        M0,224L60,208C120,192,240,160,360,165.3C480,171,600,213,720,208C840,203,960,149,1080,138.7C1200,128,1320,160,1380,176L1440,192L1440,320L0,320Z;
-        M0,165.3C60,171,120,213,240,208C360,203,480,149,600,138.7C720,128,840,160,960,176C1080,192,1200,224,1320,208L1440,192L1440,320L0,320Z;
-        M0,224L60,208C120,192,240,160,360,165.3C480,171,600,213,720,208C840,203,960,149,1080,138.7C1200,128,1320,160,1380,176L1440,192L1440,320L0,320Z
-      " />
-  </path>
+    <!-- ستاره‌های وکتوری کیهان و سحابی‌ها -->
+    <g fill="#ffffff">
+      <!-- ستاره‌های ریز -->
+      <circle cx="45" cy="190" r="1" opacity="0.9"/>
+      <circle cx="120" cy="240" r="1.2" opacity="0.7"/>
+      <circle cx="190" cy="160" r="0.8" opacity="0.6"/>
+      <circle cx="260" cy="220" r="1.5" opacity="0.85"/>
+      <circle cx="340" cy="180" r="1" opacity="0.5"/>
+      <circle cx="410" cy="250" r="1.3" opacity="0.9"/>
+      <circle cx="490" cy="170" r="0.9" opacity="0.6"/>
+      <circle cx="560" cy="210" r="1.7" opacity="0.95"/>
+      <circle cx="630" cy="260" r="1.1" opacity="0.7"/>
+      <circle cx="710" cy="160" r="1.4" opacity="0.8"/>
+      <circle cx="780" cy="230" r="0.8" opacity="0.5"/>
+      <circle cx="850" cy="190" r="1.6" opacity="0.9"/>
+      <circle cx="920" cy="240" r="1" opacity="0.75"/>
+      <circle cx="1000" cy="170" r="1.3" opacity="0.85"/>
+      <circle cx="1070" cy="220" r="0.9" opacity="0.6"/>
+      <circle cx="1150" cy="260" r="1.5" opacity="0.95"/>
+      <circle cx="1220" cy="180" r="1.2" opacity="0.7"/>
+      <circle cx="1300" cy="230" r="1.4" opacity="0.8"/>
+      <circle cx="1380" cy="190" r="0.9" opacity="0.5"/>
+      <circle cx="1420" cy="250" r="1.3" opacity="0.9"/>
 
+      <!-- ستاره‌های درخشان و پرنور چشمک‌زن -->
+      <circle cx="150" cy="180" r="2.2" fill="#c084fc">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="480" cy="230" r="2.5" fill="#f0abfc">
+        <animate attributeName="opacity" values="1;0.2;1" dur="3.2s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="820" cy="160" r="2.8" fill="#e879f9">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="1180" cy="210" r="2.4" fill="#d8b4fe">
+        <animate attributeName="opacity" values="0.8;0.2;0.8" dur="3.6s" repeatCount="indefinite" />
+      </circle>
+    </g>
 
-  <path fill="url(#purpleGrad3)">
-    <animate attributeName="d" dur="13s" repeatCount="indefinite"
-      values="
-        M0,256L48,245.3C96,235,192,213,288,218.7C384,224,480,256,576,261.3C672,267,768,245,864,240C960,235,1056,245,1152,250.7C1248,256,1344,256,1392,256L1440,256L1440,320L0,320Z;
-        M0,218.7C48,224,96,256,192,261.3C288,267,384,245,480,240C576,235,672,245,768,250.7C864,256,960,256,1056,245.3C1152,235,1248,213,1344,218.7L1440,224L1440,320L0,320Z;
-        M0,256L48,245.3C96,235,192,213,288,218.7C384,224,480,256,576,261.3C672,267,768,245,864,240C960,235,1056,245,1152,250.7C1248,256,1344,256,1392,256L1440,256L1440,320L0,320Z
-      " />
-  </path>
+    <!-- لایه رنگ‌های ۴‌گانه بنفش نیمه‌شفاف روی ستاره‌ها -->
+    <rect width="1440" height="280" fill="url(#wavePurpleGrad)" />
+
+    <!-- هاله عمودی متحرک (جاروب نوری افقی که پس‌زمینه ستاره‌ها را کاملاً شفاف و واضح نشان می‌دهد) -->
+    <rect x="-300" y="0" width="260" height="280" fill="url(#verticalHaloGrad)" style="mix-blend-mode: overlay;">
+      <animate attributeName="x" from="-300" to="1500" dur="4.5s" repeatCount="indefinite" />
+    </rect>
+  </g>
 </svg>
