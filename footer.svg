@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180" width="100%" height="100%">
   <defs>
-    <!-- ۱. گرادیان ۴ رنگ درخواستی با شفافیت ملایم (برای نمایش واضح‌تر ستاره‌ها) -->
     <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#BF00FF" stop-opacity="0.52" />
       <stop offset="33%" stop-color="#FF00FF" stop-opacity="0.42" />
@@ -8,14 +7,12 @@
       <stop offset="100%" stop-color="#800080" stop-opacity="0.58" />
     </linearGradient>
 
-    <!-- ۲. گرادیان موج لایه زیرین (ایجاد عمق و لایه‌بندی شبیه capsule-render) -->
     <linearGradient id="backWaveGrad" x1="100%" y1="0%" x2="0%" y2="0%">
       <stop offset="0%" stop-color="#FF00FF" stop-opacity="0.22" />
       <stop offset="50%" stop-color="#800080" stop-opacity="0.28" />
       <stop offset="100%" stop-color="#BF00FF" stop-opacity="0.20" />
     </linearGradient>
 
-    <!-- ۳. گرادیان ماسک هاله عمودی (انتقال ملایم به شفافیت ۱۰۰٪) -->
     <linearGradient id="revealMaskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
       <stop offset="25%" stop-color="#d5d5d5" />
@@ -26,7 +23,6 @@
       <stop offset="100%" stop-color="#ffffff" />
     </linearGradient>
 
-    <!-- ۴. ماسک متحرک هاله عریض -->
     <mask id="haloClearMask">
       <rect width="1440" height="180" fill="#ffffff" />
       <rect x="-600" y="0" width="600" height="180" fill="url(#revealMaskGrad)">
@@ -34,7 +30,6 @@
       </rect>
     </mask>
 
-    <!-- ۵. فرم دقیق موج متحرک شبیه capsule-render waving -->
     <clipPath id="waveClip">
       <path>
         <animate attributeName="d" dur="7s" repeatCount="indefinite"
@@ -48,7 +43,6 @@
     </clipPath>
   </defs>
 
-  <!-- لایه موج کمکی پس‌زمینه برای عمق سه‌بعدی و شناور -->
   <path fill="url(#backWaveGrad)">
     <animate attributeName="d" dur="9s" repeatCount="indefinite"
       values="
@@ -58,16 +52,12 @@
       " />
   </path>
 
-  <!-- المان‌های محصور در قالب موج اصلی -->
   <g clip-path="url(#waveClip)">
     
-    <!-- پس‌زمینه مشکی کیهانی -->
     <rect width="1440" height="180" fill="#030108" />
 
-    <!-- لایه عکس ستاره‌ها -->
     <image href="universe.jpg" width="1440" height="180" preserveAspectRatio="xMidYMid slice" />
 
-    <!-- ستاره‌های وکتوری متراکم و درخشان درون موج -->
     <g fill="#ffffff">
       <circle cx="40" cy="110" r="0.9" opacity="0.85"/>
       <circle cx="85" cy="150" r="1.3" opacity="0.9"/>
@@ -91,7 +81,6 @@
       <circle cx="1385" cy="140" r="0.9" opacity="0.8"/>
       <circle cx="1415" cy="110" r="1.3" opacity="0.9"/>
 
-      <!-- ستاره‌های چشمک‌زن کیهانی -->
       <circle cx="125" cy="105" r="2.2" fill="#f0abfc">
         <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite" />
       </circle>
@@ -109,7 +98,6 @@
       </circle>
     </g>
 
-    <!-- لایه رنگ‌های بنفش ۴گانه شفاف که با عبور هاله ماسک به شفافیت ۱۰۰٪ می‌رسد -->
     <rect width="1440" height="180" fill="url(#purpleGradient)" mask="url(#haloClearMask)" />
 
   </g>
