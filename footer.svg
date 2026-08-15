@@ -1,104 +1,124 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150" width="100%" height="100%">
   <defs>
-    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#BF00FF" stop-opacity="0.52" />
-      <stop offset="33%" stop-color="#FF00FF" stop-opacity="0.42" />
-      <stop offset="66%" stop-color="#9400D3" stop-opacity="0.48" />
-      <stop offset="100%" stop-color="#800080" stop-opacity="0.58" />
+    <!-- ۱. گرادیان موج جلویی (۴ رنگ اصلی با تفکیک و شفافیت بهینه) -->
+    <linearGradient id="purpleGradFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#800080" stop-opacity="0.8" />
+      <stop offset="33%" stop-color="#9400D3" stop-opacity="0.7" />
+      <stop offset="66%" stop-color="#BF00FF" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#FF00FF" stop-opacity="0.8" />
     </linearGradient>
 
-    <linearGradient id="backWaveGrad" x1="100%" y1="0%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#FF00FF" stop-opacity="0.22" />
-      <stop offset="50%" stop-color="#800080" stop-opacity="0.28" />
-      <stop offset="100%" stop-color="#BF00FF" stop-opacity="0.20" />
+    <!-- ۲. گرادیان موج عقبی (برای ایجاد سایه‌روشن و تفکیک لایه‌ها) -->
+    <linearGradient id="purpleGradBack" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9400D3" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#BF00FF" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#FF00FF" stop-opacity="0.45" />
     </linearGradient>
 
-    <linearGradient id="revealMaskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- ۳. هاله متحرک عمودی با انتقال نرم -->
+    <linearGradient id="haloMaskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="25%" stop-color="#d5d5d5" />
-      <stop offset="40%" stop-color="#707070" />
+      <stop offset="25%" stop-color="#d0d0d0" />
+      <stop offset="42%" stop-color="#555555" />
       <stop offset="50%" stop-color="#000000" />
-      <stop offset="60%" stop-color="#707070" />
-      <stop offset="75%" stop-color="#d5d5d5" />
+      <stop offset="58%" stop-color="#555555" />
+      <stop offset="75%" stop-color="#d0d0d0" />
       <stop offset="100%" stop-color="#ffffff" />
     </linearGradient>
 
+    <!-- ۴. ماسک هاله متحرک -->
     <mask id="haloClearMask">
-      <rect width="1440" height="180" fill="#ffffff" />
-      <rect x="-600" y="0" width="600" height="180" fill="url(#revealMaskGrad)">
+      <rect width="1440" height="150" fill="#ffffff" />
+      <rect x="-600" y="0" width="600" height="150" fill="url(#haloMaskGrad)">
         <animate attributeName="x" from="-600" to="1600" dur="5.5s" repeatCount="indefinite" />
       </rect>
     </mask>
 
-    <clipPath id="waveClip">
+    <!-- ۵. کات و مسیر حرکت موج پشتی (Back Wave) -->
+    <clipPath id="backWaveClip">
+      <path>
+        <animate attributeName="d" dur="10s" repeatCount="indefinite"
+          values="
+            M0,40 C320,80 520,10 820,60 C1120,110 1280,30 1440,20 L1440,150 L0,150 Z;
+            M0,20 C240,15 480,95 780,45 C1080,-5 1300,70 1440,40 L1440,150 L0,150 Z;
+            M0,40 C320,80 520,10 820,60 C1120,110 1280,30 1440,20 L1440,150 L0,150 Z
+          " />
+      </path>
+    </clipPath>
+
+    <!-- ۶. کات و مسیر حرکت موج جلویی (Front Wave) -->
+    <clipPath id="frontWaveClip">
       <path>
         <animate attributeName="d" dur="7s" repeatCount="indefinite"
           values="
-            M0,60 C320,130 420,-15 720,55 C1020,125 1120,-15 1440,60 L1440,180 L0,180 Z;
-            M0,45 C300,-15 460,115 720,45 C980,-20 1140,105 1440,45 L1440,180 L0,180 Z;
-            M0,75 C360,10 520,125 720,65 C920,10 1180,115 1440,75 L1440,180 L0,180 Z;
-            M0,60 C320,130 420,-15 720,55 C1020,125 1120,-15 1440,60 L1440,180 L0,180 Z
+            M0,60 C300,10 580,12 880,45 C1140,75 1320,60 1440,50 L1440,150 L0,150 Z;
+            M0,45 C260,70 540,50 840,18 C1100,-10 1340,40 1440,60 L1440,150 L0,150 Z;
+            M0,60 C300,10 580,12 880,45 C1140,75 1320,60 1440,50 L1440,150 L0,150 Z
           " />
       </path>
     </clipPath>
   </defs>
 
-  <path fill="url(#backWaveGrad)">
-    <animate attributeName="d" dur="9s" repeatCount="indefinite"
-      values="
-        M0,80 C360,10 540,130 900,65 C1160,15 1300,125 1440,80 L1440,180 L0,180 Z;
-        M0,50 C280,120 600,20 860,80 C1120,140 1320,30 1440,50 L1440,180 L0,180 Z;
-        M0,80 C360,10 540,130 900,65 C1160,15 1300,125 1440,80 L1440,180 L0,180 Z
-      " />
-  </path>
-
-  <g clip-path="url(#waveClip)">
+  <!-- ================= لایه اول: موج پشتی ================= -->
+  <g clip-path="url(#backWaveClip)">
+    <rect width="1440" height="150" fill="#040108" />
+    <image href="universe.jpg" width="1440" height="150" preserveAspectRatio="xMidYMid slice" />
     
-    <rect width="1440" height="180" fill="#030108" />
+    <!-- ستاره‌های لایه عقب -->
+    <g fill="#ffffff" opacity="0.8">
+      <circle cx="80" cy="50" r="1.1" />
+      <circle cx="220" cy="35" r="0.9" />
+      <circle cx="530" cy="25" r="1.3" />
+      <circle cx="750" cy="55" r="1.0" />
+      <circle cx="1020" cy="20" r="1.2" />
+      <circle cx="1260" cy="45" r="1.4" />
+      <circle cx="1380" cy="30" r="0.9" />
+    </g>
 
-    <image href="universe.jpg" width="1440" height="180" preserveAspectRatio="xMidYMid slice" />
+    <!-- لایه رنگی بنفش موج عقب -->
+    <rect width="1440" height="150" fill="url(#purpleGradBack)" />
+  </g>
 
+  <!-- ================= لایه دوم: موج جلویی اصلی ================= -->
+  <g clip-path="url(#frontWaveClip)">
+    <rect width="1440" height="150" fill="#040108" />
+    <image href="universe.jpg" width="1440" height="150" preserveAspectRatio="xMidYMid slice" />
+    
+    <!-- ستاره‌های درخشان و وکتوری لایه جلو -->
     <g fill="#ffffff">
-      <circle cx="40" cy="110" r="0.9" opacity="0.85"/>
-      <circle cx="85" cy="150" r="1.3" opacity="0.9"/>
-      <circle cx="150" cy="90" r="0.8" opacity="0.75"/>
-      <circle cx="210" cy="135" r="1.4" opacity="0.9"/>
-      <circle cx="275" cy="100" r="1" opacity="0.7"/>
-      <circle cx="340" cy="160" r="1.2" opacity="0.95"/>
-      <circle cx="415" cy="95" r="0.9" opacity="0.8"/>
-      <circle cx="485" cy="140" r="1.6" opacity="0.95"/>
-      <circle cx="560" cy="115" r="1.1" opacity="0.75"/>
-      <circle cx="630" cy="155" r="1.5" opacity="0.9"/>
-      <circle cx="710" cy="95" r="1.2" opacity="0.85"/>
-      <circle cx="780" cy="135" r="0.8" opacity="0.7"/>
-      <circle cx="855" cy="110" r="1.7" opacity="0.95"/>
-      <circle cx="925" cy="160" r="1.1" opacity="0.85"/>
-      <circle cx="1005" cy="100" r="1.3" opacity="0.9"/>
-      <circle cx="1075" cy="145" r="0.9" opacity="0.75"/>
-      <circle cx="1155" cy="120" r="1.5" opacity="0.95"/>
-      <circle cx="1225" cy="160" r="1.2" opacity="0.85"/>
-      <circle cx="1305" cy="105" r="1.4" opacity="0.9"/>
-      <circle cx="1385" cy="140" r="0.9" opacity="0.8"/>
-      <circle cx="1415" cy="110" r="1.3" opacity="0.9"/>
+      <circle cx="50" cy="85" r="0.9" opacity="0.85"/>
+      <circle cx="130" cy="115" r="1.3" opacity="0.9"/>
+      <circle cx="210" cy="75" r="0.8" opacity="0.75"/>
+      <circle cx="290" cy="105" r="1.4" opacity="0.9"/>
+      <circle cx="380" cy="80" r="1" opacity="0.7"/>
+      <circle cx="470" cy="120" r="1.2" opacity="0.95"/>
+      <circle cx="560" cy="75" r="0.9" opacity="0.8"/>
+      <circle cx="650" cy="110" r="1.6" opacity="0.95"/>
+      <circle cx="740" cy="85" r="1.1" opacity="0.75"/>
+      <circle cx="830" cy="115" r="1.5" opacity="0.9"/>
+      <circle cx="920" cy="75" r="1.2" opacity="0.85"/>
+      <circle cx="1010" cy="105" r="0.8" opacity="0.7"/>
+      <circle cx="1100" cy="80" r="1.7" opacity="0.95"/>
+      <circle cx="1190" cy="120" r="1.1" opacity="0.85"/>
+      <circle cx="1280" cy="80" r="1.3" opacity="0.9"/>
+      <circle cx="1370" cy="110" r="1.4" opacity="0.9"/>
 
-      <circle cx="125" cy="105" r="2.2" fill="#f0abfc">
+      <!-- ستاره‌های چشمک‌زن کیهانی -->
+      <circle cx="160" cy="80" r="2.2" fill="#f0abfc">
         <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite" />
       </circle>
-      <circle cx="440" cy="145" r="2.5" fill="#ffffff">
+      <circle cx="520" cy="110" r="2.5" fill="#ffffff">
         <animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite" />
       </circle>
-      <circle cx="770" cy="105" r="2.3" fill="#e9d5ff">
+      <circle cx="890" cy="75" r="2.3" fill="#e9d5ff">
         <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite" />
       </circle>
-      <circle cx="1110" cy="135" r="2.4" fill="#f5d0fe">
+      <circle cx="1220" cy="105" r="2.4" fill="#f5d0fe">
         <animate attributeName="opacity" values="0.9;0.2;0.9" dur="3.4s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="1340" cy="115" r="2.1" fill="#ffffff">
-        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" repeatCount="indefinite" />
       </circle>
     </g>
 
-    <rect width="1440" height="180" fill="url(#purpleGradient)" mask="url(#haloClearMask)" />
-
+    <!-- لایه رنگ بنفش ۴تایی جلو با ماسک هاله متحرک -->
+    <rect width="1440" height="150" fill="url(#purpleGradFront)" mask="url(#haloClearMask)" />
   </g>
 </svg>
