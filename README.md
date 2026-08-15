@@ -63,3 +63,7 @@ Welcome to my very first web development project! Built entirely from scratch us
 </p>
 
 </div>
+
+<p align="center">
+  <img src="footer.svg" width="100%" />
+</p>
