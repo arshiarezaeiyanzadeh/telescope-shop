@@ -1,102 +1,116 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180" width="100%" height="100%">
   <defs>
-    <!-- ۱. گرادیان ۴ رنگ اختصاصی بنفش -->
+    <!-- ۱. گرادیان ۴ رنگ درخواستی با شفافیت ملایم (برای نمایش واضح‌تر ستاره‌ها) -->
     <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#800080" stop-opacity="0.88" />
-      <stop offset="33%" stop-color="#9400D3" stop-opacity="0.8" />
-      <stop offset="66%" stop-color="#BF00FF" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#FF00FF" stop-opacity="0.88" />
+      <stop offset="0%" stop-color="#BF00FF" stop-opacity="0.52" />
+      <stop offset="33%" stop-color="#FF00FF" stop-opacity="0.42" />
+      <stop offset="66%" stop-color="#9400D3" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#800080" stop-opacity="0.58" />
     </linearGradient>
 
-    <!-- ۲. گرادیان ماسک هاله عریض با انتقال ملایم و نرم -->
-    <!-- رنگ مشکی در ماسک لایه بنفش را محو می‌کند (دید ۱۰۰٪ ستاره‌ها) و سفید آن را نگه می‌دارد -->
+    <!-- ۲. گرادیان موج لایه زیرین (ایجاد عمق و لایه‌بندی شبیه capsule-render) -->
+    <linearGradient id="backWaveGrad" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#FF00FF" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#800080" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#BF00FF" stop-opacity="0.20" />
+    </linearGradient>
+
+    <!-- ۳. گرادیان ماسک هاله عمودی (انتقال ملایم به شفافیت ۱۰۰٪) -->
     <linearGradient id="revealMaskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="20%" stop-color="#e0e0e0" />
-      <stop offset="35%" stop-color="#888888" />
+      <stop offset="25%" stop-color="#d5d5d5" />
+      <stop offset="40%" stop-color="#707070" />
       <stop offset="50%" stop-color="#000000" />
-      <stop offset="65%" stop-color="#888888" />
-      <stop offset="80%" stop-color="#e0e0e0" />
+      <stop offset="60%" stop-color="#707070" />
+      <stop offset="75%" stop-color="#d5d5d5" />
       <stop offset="100%" stop-color="#ffffff" />
     </linearGradient>
 
-    <!-- ۳. ماسک اختصاصی متحرک روی لایه رنگ بنفش -->
+    <!-- ۴. ماسک متحرک هاله عریض -->
     <mask id="haloClearMask">
-      <rect width="1440" height="280" fill="#ffffff" />
-      <!-- نوار عریض ۵۰۰ پیکسلی متحرک با حرکت روان و نرم -->
-      <rect x="-550" y="0" width="550" height="280" fill="url(#revealMaskGrad)">
-        <animate attributeName="x" from="-550" to="1550" dur="6s" repeatCount="indefinite" />
+      <rect width="1440" height="180" fill="#ffffff" />
+      <rect x="-600" y="0" width="600" height="180" fill="url(#revealMaskGrad)">
+        <animate attributeName="x" from="-600" to="1600" dur="5.5s" repeatCount="indefinite" />
       </rect>
     </mask>
 
-    <!-- ۴. برش موج (محصور کردن همه‌چیز فقط داخل قالب موج) -->
+    <!-- ۵. فرم دقیق موج متحرک شبیه capsule-render waving -->
     <clipPath id="waveClip">
       <path>
-        <animate attributeName="d" dur="8s" repeatCount="indefinite"
+        <animate attributeName="d" dur="7s" repeatCount="indefinite"
           values="
-            M0,120 C320,60 420,180 720,120 C1020,60 1120,180 1440,120 L1440,280 L0,280 Z;
-            M0,150 C300,200 450,70 720,140 C990,210 1140,80 1440,150 L1440,280 L0,280 Z;
-            M0,100 C350,50 400,190 720,110 C1040,30 1100,170 1440,100 L1440,280 L0,280 Z;
-            M0,120 C320,60 420,180 720,120 C1020,60 1120,180 1440,120 L1440,280 L0,280 Z
+            M0,60 C320,130 420,-15 720,55 C1020,125 1120,-15 1440,60 L1440,180 L0,180 Z;
+            M0,45 C300,-15 460,115 720,45 C980,-20 1140,105 1440,45 L1440,180 L0,180 Z;
+            M0,75 C360,10 520,125 720,65 C920,10 1180,115 1440,75 L1440,180 L0,180 Z;
+            M0,60 C320,130 420,-15 720,55 C1020,125 1120,-15 1440,60 L1440,180 L0,180 Z
           " />
       </path>
     </clipPath>
   </defs>
 
-  <!-- کل المان‌ها داخل کادر برش موج -->
+  <!-- لایه موج کمکی پس‌زمینه برای عمق سه‌بعدی و شناور -->
+  <path fill="url(#backWaveGrad)">
+    <animate attributeName="d" dur="9s" repeatCount="indefinite"
+      values="
+        M0,80 C360,10 540,130 900,65 C1160,15 1300,125 1440,80 L1440,180 L0,180 Z;
+        M0,50 C280,120 600,20 860,80 C1120,140 1320,30 1440,50 L1440,180 L0,180 Z;
+        M0,80 C360,10 540,130 900,65 C1160,15 1300,125 1440,80 L1440,180 L0,180 Z
+      " />
+  </path>
+
+  <!-- المان‌های محصور در قالب موج اصلی -->
   <g clip-path="url(#waveClip)">
     
-    <!-- لایه ۱: پس‌زمینه عمیق کیهان و آسمان شب -->
-    <rect width="1440" height="280" fill="#040108" />
+    <!-- پس‌زمینه مشکی کیهانی -->
+    <rect width="1440" height="180" fill="#030108" />
 
-    <!-- در صورت وجود فایل عکس در پوشه، لود می‌شود -->
-    <image href="universe.jpg" width="1440" height="280" preserveAspectRatio="xMidYMid slice" />
+    <!-- لایه عکس ستاره‌ها -->
+    <image href="universe.jpg" width="1440" height="180" preserveAspectRatio="xMidYMid slice" />
 
-    <!-- لایه ستاره‌های وکتوری پرجزئیات و درخشان (برای تضمین زیبایی کامل در گیت‌هاب) -->
+    <!-- ستاره‌های وکتوری متراکم و درخشان درون موج -->
     <g fill="#ffffff">
-      <!-- ستاره‌های ریز کهکشان -->
-      <circle cx="35" cy="180" r="0.9" opacity="0.8"/>
-      <circle cx="95" cy="230" r="1.3" opacity="0.9"/>
-      <circle cx="160" cy="150" r="0.8" opacity="0.7"/>
-      <circle cx="210" cy="210" r="1.4" opacity="0.85"/>
-      <circle cx="280" cy="170" r="1" opacity="0.6"/>
-      <circle cx="340" cy="250" r="1.2" opacity="0.9"/>
-      <circle cx="420" cy="160" r="0.9" opacity="0.75"/>
-      <circle cx="490" cy="220" r="1.6" opacity="0.95"/>
-      <circle cx="570" cy="180" r="1.1" opacity="0.7"/>
-      <circle cx="640" cy="240" r="1.5" opacity="0.9"/>
-      <circle cx="720" cy="150" r="1.2" opacity="0.85"/>
-      <circle cx="790" cy="210" r="0.8" opacity="0.6"/>
-      <circle cx="860" cy="180" r="1.7" opacity="0.95"/>
-      <circle cx="930" cy="250" r="1.1" opacity="0.8"/>
-      <circle cx="1010" cy="160" r="1.3" opacity="0.9"/>
-      <circle cx="1080" cy="230" r="0.9" opacity="0.7"/>
-      <circle cx="1160" cy="190" r="1.5" opacity="0.95"/>
-      <circle cx="1230" cy="250" r="1.2" opacity="0.8"/>
-      <circle cx="1310" cy="170" r="1.4" opacity="0.85"/>
-      <circle cx="1390" cy="220" r="1" opacity="0.75"/>
-      <circle cx="1420" cy="180" r="1.3" opacity="0.9"/>
+      <circle cx="40" cy="110" r="0.9" opacity="0.85"/>
+      <circle cx="85" cy="150" r="1.3" opacity="0.9"/>
+      <circle cx="150" cy="90" r="0.8" opacity="0.75"/>
+      <circle cx="210" cy="135" r="1.4" opacity="0.9"/>
+      <circle cx="275" cy="100" r="1" opacity="0.7"/>
+      <circle cx="340" cy="160" r="1.2" opacity="0.95"/>
+      <circle cx="415" cy="95" r="0.9" opacity="0.8"/>
+      <circle cx="485" cy="140" r="1.6" opacity="0.95"/>
+      <circle cx="560" cy="115" r="1.1" opacity="0.75"/>
+      <circle cx="630" cy="155" r="1.5" opacity="0.9"/>
+      <circle cx="710" cy="95" r="1.2" opacity="0.85"/>
+      <circle cx="780" cy="135" r="0.8" opacity="0.7"/>
+      <circle cx="855" cy="110" r="1.7" opacity="0.95"/>
+      <circle cx="925" cy="160" r="1.1" opacity="0.85"/>
+      <circle cx="1005" cy="100" r="1.3" opacity="0.9"/>
+      <circle cx="1075" cy="145" r="0.9" opacity="0.75"/>
+      <circle cx="1155" cy="120" r="1.5" opacity="0.95"/>
+      <circle cx="1225" cy="160" r="1.2" opacity="0.85"/>
+      <circle cx="1305" cy="105" r="1.4" opacity="0.9"/>
+      <circle cx="1385" cy="140" r="0.9" opacity="0.8"/>
+      <circle cx="1415" cy="110" r="1.3" opacity="0.9"/>
 
       <!-- ستاره‌های چشمک‌زن کیهانی -->
-      <circle cx="130" cy="170" r="2.2" fill="#e9d5ff">
+      <circle cx="125" cy="105" r="2.2" fill="#f0abfc">
         <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite" />
       </circle>
-      <circle cx="450" cy="230" r="2.6" fill="#f5d0fe">
+      <circle cx="440" cy="145" r="2.5" fill="#ffffff">
         <animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite" />
       </circle>
-      <circle cx="780" cy="170" r="2.4" fill="#ffffff">
-        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.1s" repeatCount="indefinite" />
+      <circle cx="770" cy="105" r="2.3" fill="#e9d5ff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite" />
       </circle>
-      <circle cx="1120" cy="220" r="2.5" fill="#e9d5ff">
-        <animate attributeName="opacity" values="0.9;0.2;0.9" dur="3.5s" repeatCount="indefinite" />
+      <circle cx="1110" cy="135" r="2.4" fill="#f5d0fe">
+        <animate attributeName="opacity" values="0.9;0.2;0.9" dur="3.4s" repeatCount="indefinite" />
       </circle>
-      <circle cx="1350" cy="190" r="2.1" fill="#f5d0fe">
-        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite" />
+      <circle cx="1340" cy="115" r="2.1" fill="#ffffff">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" repeatCount="indefinite" />
       </circle>
     </g>
 
-    <!-- لایه ۲: گرادیان رنگ‌های بنفش که توسط ماسک هاله در محل عبور، کنار می‌رود -->
-    <rect width="1440" height="280" fill="url(#purpleGradient)" mask="url(#haloClearMask)" />
+    <!-- لایه رنگ‌های بنفش ۴گانه شفاف که با عبور هاله ماسک به شفافیت ۱۰۰٪ می‌رسد -->
+    <rect width="1440" height="180" fill="url(#purpleGradient)" mask="url(#haloClearMask)" />
 
   </g>
 </svg>
