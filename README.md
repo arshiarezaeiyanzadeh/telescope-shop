@@ -2,9 +2,8 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1128,25:16233F,50:1B3A6B,75:2C5F9B,100:4A7FBF&height=150&section=header&v=3" width="100%" />
 </p>
 
-
 <p align="center">
-  <img src="solar-system.svg?v=1" width="100%" />
+  <img src="solar-system.svg?v=2" width="100%" />
 </p>
 
 <div align="center">
