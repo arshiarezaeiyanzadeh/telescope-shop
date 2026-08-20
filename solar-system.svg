@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
   <defs>
-    <radialGradient id="sunGlow" cx="130" cy="200" r="200" fx="50" fy="200" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-      <stop offset="25%" stop-color="#fef08a" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#f97316" stop-opacity="0.6" />
-      <stop offset="75%" stop-color="#7c2d12" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#7c2d12" stop-opacity="0" /> </radialGradient>
-
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="15%" stop-color="#fef08a" />
+      <stop offset="35%" stop-color="#f97316" />
+      <stop offset="60%" stop-color="#7c2d12" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#7c2d12" stop-opacity="0" />
+    </radialGradient>
     <radialGradient id="sunCore" cx="30%" cy="30%" r="70%">
       <stop offset="0%" stop-color="#ffffff" />
       <stop offset="35%" stop-color="#fde047" />
@@ -36,7 +36,7 @@
     <circle cx="200" cy="200" r="1" opacity="0.6"/><circle cx="450" cy="100" r="0.8" opacity="0.5"/><circle cx="800" cy="180" r="1.2" opacity="0.7"/><circle cx="1050" cy="350" r="1" opacity="0.8"/>
   </g>
 
-  <circle cx="130" cy="200" r="200" fill="url(#sunGlow)" style="mix-blend-mode: screen;" />
+  <circle cx="50" cy="200" r="240" fill="url(#sunGlow)" style="mix-blend-mode: screen;" />
 
   <g>
     <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="8s" repeatCount="indefinite" />
