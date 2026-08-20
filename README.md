@@ -9,6 +9,11 @@
     <img src="https://readme-typing-svg.demolab.com?font=Nanum+Gothic&weight=700&size=22&duration=3000&pause=1000&color=0071FF&center=true&vCenter=true&width=600&lines=Telescope+Shop+%E2%80%93+E-Commerce+Store;First+Frontend+Web+Development+Project;Built+with+Pure+HTML5+%26+CSS3;Fully+Responsive+%26+Space-Themed+UI" alt="Typing SVG" />
   </a>
 </p>
+
+<p align="center">
+  <img src="solar-system.svg?v=1" width="100%" />
+</p>
+
 <p style="font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 1.8; max-width: 800px; margin: 0 auto;">
 Welcome to my very first web development project! Built entirely from scratch using pure <b>HTML5</b> and <b>CSS3</b>, this project is a fully responsive e-commerce platform designed for astronomy enthusiasts and high-end telescope buyers.
 </p>
