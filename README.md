@@ -7,7 +7,9 @@
 </p>
 
 <div align="center">
-<h1 style="color: #0071FF;">🌌 Telescope shop 🔭</h1>
+
+<p style="font-size: 32px; font-weight: 700; color: #0071FF; margin: 20px 0 10px 0;">🌌 Telescope shop 🔭</p>
+
 <p align="center">
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=700&size=22&duration=3000&pause=1000&color=0071FF&center=true&vCenter=true&width=600&lines=Telescope+Shop+%E2%80%93+E-Commerce+Store;First+Frontend+Web+Development+Project;Built+with+Pure+HTML5+%26+CSS3;Fully+Responsive+%26+Space-Themed+UI" alt="Typing SVG" />
@@ -79,4 +81,35 @@ Welcome to my very first web development project! Built entirely from scratch us
 <br>
 
 <h3 style="color: #2C5F9B; font-size: 24px;">📂 File Structure</h3>
-<div align="left" style="max-width: 600px; margin: 0 auto;
+<div align="left" style="max-width: 600px; margin: 0 auto; background-color: #0d1117; padding: 20px; border-radius: 12px; border: 1px solid rgba(44, 95, 155, 0.4); box-shadow: 0 8px 20px rgba(44, 95, 155, 0.2);">
+<pre style="color: #c9d1d9; font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; background: transparent; border: none; margin: 0; padding: 0; line-height: 1.5;">
+📦 telescope-shop
+ ┣ 📂 style/                  # CSS Stylesheets
+ ┃ ┣ 📜 about.css             # Styles for the About page
+ ┃ ┣ 📜 home.css              # Styles for the Home page
+ ┃ ┣ 📜 log in.css            # Styles for the Login page
+ ┃ ┗ 📜 shop.css              # Styles for the Shop/Products page
+ ┣ 📜 about.html              # About section
+ ┣ 📜 home.html               # Main landing page
+ ┣ 📜 log in.html             # User authentication page
+ ┣ 📜 shop.html               # Products and telescope listings
+ ┣ 📜 solar-system.svg        # 3D Solar system animation for README
+ ┣ 📜 footer.svg              # Footer animation for README
+ ┗ 📜 README.md               # You are here!
+</pre>
+</div>
+
+<br>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1128,25:16233F,50:1B3A6B,75:2C5F9B,100:4A7FBF&height=4" width="100%" />
+</p>
+<br>
+
+<p style="font-size: 16px;">
+  Feel free to explore the repository and live demo! 🚀
+</p>
+</div>
+
+<p align="center">
+  <img src="footer.svg?v=1" width="100%" />
+</p>
