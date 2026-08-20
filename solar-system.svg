@@ -73,4 +73,30 @@
   <g>
     <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="8s" repeatCount="indefinite" />
     <animateMotion dur="8s" repeatCount="indefinite"><mpath href="#orbit-venus"/></animateMotion>
-    <circle fill="url(#gradVenus)"><animate attributeName="r" values="6; 3; 6; 9; 6" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="8s"
+    <circle fill="url(#gradVenus)"><animate attributeName="r" values="6; 3; 6; 9; 6" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="8s" repeatCount="indefinite" /></circle>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="14s" repeatCount="indefinite" />
+    <animateMotion dur="14s" repeatCount="indefinite"><mpath href="#orbit-earth"/></animateMotion>
+    <circle fill="url(#gradEarth)"><animate attributeName="r" values="9; 4.5; 9; 14; 9" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="14s" repeatCount="indefinite" /></circle>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="20s" repeatCount="indefinite" />
+    <animateMotion dur="20s" repeatCount="indefinite"><mpath href="#orbit-mars"/></animateMotion>
+    <circle fill="url(#gradMars)"><animate attributeName="r" values="7; 3.5; 7; 11; 7" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="20s" repeatCount="indefinite" /></circle>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="32s" repeatCount="indefinite" />
+    <animateMotion dur="32s" repeatCount="indefinite"><mpath href="#orbit-jupiter"/></animateMotion>
+    <circle fill="url(#gradJupiter)"><animate attributeName="r" values="20; 10; 20; 30; 20" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="32s" repeatCount="indefinite" /></circle>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="45s" repeatCount="indefinite" />
+    <animateMotion dur="45s" repeatCount="indefinite"><mpath href="#orbit-saturn"/></animateMotion>
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1; 0.5; 1; 1.5; 1" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="45s" repeatCount="indefinite" />
+      <ellipse cx="0" cy="0" rx="30" ry="10" fill="none" stroke="rgba(252,211,77,0.7)" stroke-width="4" transform="rotate(-20)" />
+      <circle cx="0" cy="0" r="14" fill="url(#gradSaturn)" />
+    </g>
+  </g>
+</svg>
