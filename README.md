@@ -54,3 +54,66 @@ Welcome to my very first web development project! Built entirely from scratch us
 <br>
 <img src="photo_2026-08-11_01-16-49.jpg-products.jpg" alt="Products Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(44, 95, 155, 0.4); margin-bottom: 25px;" />
 <br><br>
+
+<p style="color: #4A7FBF; font-size: 22px; font-weight: 600;">🎬 About Page</p>
+<br>
+<img src="photo_2026-08-11_01-19-30.jpg-about.jpg" alt="About Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(44, 95, 155, 0.4); margin-bottom: 25px;" />
+<br><br>
+
+<p style="color: #4A7FBF; font-size: 22px; font-weight: 600;">🔐 Login Page</p>
+<br>
+<img src="photo_2026-08-11_01-17-10.jpg-login.jpg" alt="Login Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(44, 95, 155, 0.4); margin-bottom: 25px;" />
+<br>
+
+<br>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1128,25:16233F,50:1B3A6B,75:2C5F9B,100:4A7FBF&height=4" width="100%" />
+</p>
+<br>
+
+<p style="color: #2C5F9B; font-size: 28px; font-weight: 700; margin-bottom: 15px;">✨ Key Highlights</p>
+<div style="display: inline-block; text-align: left; padding: 10px; font-size: 17px; line-height: 1.8;">
+  <p>✔️ <b>100% Custom Design & Layout:</b> Designed with full creative freedom, featuring a cosmic black hole visual effect, dark glassmorphism cards, and modern layout aesthetics.</p>
+  <p>✔️ <b>Fully Responsive:</b> Seamlessly adapts to all screen sizes—from mobile devices to ultra-wide monitors.</p>
+  <p>✔️ <b>Pure CSS Effects:</b> Built with modern CSS techniques including flexbox, clamp() typography, CSS gradients, and interactive hover animations.</p>
+</div>
+
+<br>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1128,25:16233F,50:1B3A6B,75:2C5F9B,100:4A7FBF&height=4" width="100%" />
+</p>
+<br>
+
+<p style="color: #2C5F9B; font-size: 28px; font-weight: 700; margin-bottom: 20px;">📂 File Structure</p>
+<div align="left" style="max-width: 650px; margin: 0 auto; background-color: #0d1117; padding: 22px; border-radius: 12px; border: 1px solid rgba(44, 95, 155, 0.4); box-shadow: 0 8px 20px rgba(44, 95, 155, 0.2);">
+<pre style="color: #c9d1d9; font-size: 15px; font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; background: transparent; border: none; margin: 0; padding: 0; line-height: 1.6;">
+📦 telescope-shop
+ ┣ 📂 style/                  # CSS Stylesheets
+ ┃ ┣ 📜 about.css             # Styles for the About page
+ ┃ ┣ 📜 home.css              # Styles for the Home page
+ ┃ ┣ 📜 log in.css            # Styles for the Login page
+ ┃ ┗ 📜 shop.css              # Styles for the Shop/Products page
+ ┣ 📜 about.html              # About section
+ ┣ 📜 home.html               # Main landing page
+ ┣ 📜 log in.html             # User authentication page
+ ┣ 📜 shop.html               # Products and telescope listings
+ ┣ 📜 solar-system.svg        # 3D Solar system animation for README
+ ┣ 📜 footer.svg              # Footer animation for README
+ ┗ 📜 README.md               # You are here!
+</pre>
+</div>
+
+<br>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1128,25:16233F,50:1B3A6B,75:2C5F9B,100:4A7FBF&height=4" width="100%" />
+</p>
+<br>
+
+<p style="font-size: 18px; font-weight: 500;">
+  Feel free to explore the repository and live demo! 🚀
+</p>
+</div>
+
+<p align="center">
+  <img src="footer.svg?v=1" width="100%" />
+</p>
