@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="solar-system.svg?v=6" width="100%" />
+  <img src="solar-system.svg?v=7" width="100%" />
 </p>
 
 <div align="center">
