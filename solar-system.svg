@@ -1,15 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
   <defs>
-    <radialGradient id="edgeFade" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-      <stop offset="65%" stop-color="#ffffff" stop-opacity="1" />
-      <stop offset="85%" stop-color="#ffffff" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
-    </radialGradient>
-    <mask id="soft-mask">
-      <rect width="1200" height="400" fill="url(#edgeFade)" />
-    </mask>
-
     <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff" />
       <stop offset="15%" stop-color="#fef08a" />
@@ -37,80 +27,76 @@
     <path id="orbit-saturn" d="M -1000,200 A 1050,195 0 0,0 1100,200 A 1050,195 0 0,0 -1000,200" />
   </defs>
 
-  <g mask="url(#soft-mask)">
-    
-    <g fill="#a855f7">
-      <circle cx="150" cy="80" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite" /></circle>
-      <circle cx="350" cy="320" r="2.5"><animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite" /></circle>
-      <circle cx="650" cy="50" r="1.2"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" /></circle>
-      <circle cx="950" cy="280" r="2"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="5s" repeatCount="indefinite" /></circle>
-      <circle cx="1100" cy="120" r="1.8"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="3.5s" repeatCount="indefinite" /></circle>
-      <circle cx="200" cy="200" r="1" opacity="0.6"/><circle cx="450" cy="100" r="0.8" opacity="0.5"/><circle cx="800" cy="180" r="1.2" opacity="0.7"/><circle cx="1050" cy="350" r="1" opacity="0.8"/>
-    </g>
+  <g fill="#a855f7">
+    <circle cx="150" cy="80" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite" /></circle>
+    <circle cx="350" cy="320" r="2.5"><animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite" /></circle>
+    <circle cx="650" cy="50" r="1.2"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" /></circle>
+    <circle cx="950" cy="280" r="2"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="5s" repeatCount="indefinite" /></circle>
+    <circle cx="1100" cy="120" r="1.8"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="3.5s" repeatCount="indefinite" /></circle>
+    <circle cx="200" cy="200" r="1" opacity="0.6"/><circle cx="450" cy="100" r="0.8" opacity="0.5"/><circle cx="800" cy="180" r="1.2" opacity="0.7"/><circle cx="1050" cy="350" r="1" opacity="0.8"/>
+  </g>
 
-    <circle cx="50" cy="200" r="240" fill="url(#sunGlow)" style="mix-blend-mode: screen;" />
+  <circle cx="50" cy="200" r="240" fill="url(#sunGlow)" style="mix-blend-mode: screen;" />
 
+  <g>
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="8s" repeatCount="indefinite" />
+    <animateMotion dur="8s" repeatCount="indefinite"><mpath href="#orbit-venus"/></animateMotion>
+    <circle fill="url(#gradVenus)"><animate attributeName="r" values="6; 3; 6; 9; 6" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="8s" repeatCount="indefinite" /></circle>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="14s" repeatCount="indefinite" />
+    <animateMotion dur="14s" repeatCount="indefinite"><mpath href="#orbit-earth"/></animateMotion>
+    <circle fill="url(#gradEarth)"><animate attributeName="r" values="9; 4.5; 9; 14; 9" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="14s" repeatCount="indefinite" /></circle>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="20s" repeatCount="indefinite" />
+    <animateMotion dur="20s" repeatCount="indefinite"><mpath href="#orbit-mars"/></animateMotion>
+    <circle fill="url(#gradMars)"><animate attributeName="r" values="7; 3.5; 7; 11; 7" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="20s" repeatCount="indefinite" /></circle>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="32s" repeatCount="indefinite" />
+    <animateMotion dur="32s" repeatCount="indefinite"><mpath href="#orbit-jupiter"/></animateMotion>
+    <circle fill="url(#gradJupiter)"><animate attributeName="r" values="20; 10; 20; 30; 20" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="32s" repeatCount="indefinite" /></circle>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="45s" repeatCount="indefinite" />
+    <animateMotion dur="45s" repeatCount="indefinite"><mpath href="#orbit-saturn"/></animateMotion>
     <g>
-      <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="8s" repeatCount="indefinite" />
-      <animateMotion dur="8s" repeatCount="indefinite"><mpath href="#orbit-venus"/></animateMotion>
-      <circle fill="url(#gradVenus)"><animate attributeName="r" values="6; 3; 6; 9; 6" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="8s" repeatCount="indefinite" /></circle>
+      <animateTransform attributeName="transform" type="scale" values="1; 0.5; 1; 1.5; 1" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="45s" repeatCount="indefinite" />
+      <ellipse cx="0" cy="0" rx="30" ry="10" fill="none" stroke="rgba(252,211,77,0.7)" stroke-width="4" transform="rotate(-20)" />
+      <circle cx="0" cy="0" r="14" fill="url(#gradSaturn)" />
     </g>
-    <g>
-      <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="14s" repeatCount="indefinite" />
-      <animateMotion dur="14s" repeatCount="indefinite"><mpath href="#orbit-earth"/></animateMotion>
-      <circle fill="url(#gradEarth)"><animate attributeName="r" values="9; 4.5; 9; 14; 9" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="14s" repeatCount="indefinite" /></circle>
-    </g>
-    <g>
-      <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="20s" repeatCount="indefinite" />
-      <animateMotion dur="20s" repeatCount="indefinite"><mpath href="#orbit-mars"/></animateMotion>
-      <circle fill="url(#gradMars)"><animate attributeName="r" values="7; 3.5; 7; 11; 7" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="20s" repeatCount="indefinite" /></circle>
-    </g>
-    <g>
-      <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="32s" repeatCount="indefinite" />
-      <animateMotion dur="32s" repeatCount="indefinite"><mpath href="#orbit-jupiter"/></animateMotion>
-      <circle fill="url(#gradJupiter)"><animate attributeName="r" values="20; 10; 20; 30; 20" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="32s" repeatCount="indefinite" /></circle>
-    </g>
-    <g>
-      <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="45s" repeatCount="indefinite" />
-      <animateMotion dur="45s" repeatCount="indefinite"><mpath href="#orbit-saturn"/></animateMotion>
-      <g>
-        <animateTransform attributeName="transform" type="scale" values="1; 0.5; 1; 1.5; 1" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="45s" repeatCount="indefinite" />
-        <ellipse cx="0" cy="0" rx="30" ry="10" fill="none" stroke="rgba(252,211,77,0.7)" stroke-width="4" transform="rotate(-20)" />
-        <circle cx="0" cy="0" r="14" fill="url(#gradSaturn)" />
-      </g>
-    </g>
+  </g>
 
-    <circle cx="50" cy="200" r="120" fill="url(#sunCore)" />
+  <circle cx="50" cy="200" r="120" fill="url(#sunCore)" />
 
+  <g>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="8s" repeatCount="indefinite" />
+    <animateMotion dur="8s" repeatCount="indefinite"><mpath href="#orbit-venus"/></animateMotion>
+    <circle fill="url(#gradVenus)"><animate attributeName="r" values="6; 3; 6; 9; 6" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="8s" repeatCount="indefinite" /></circle>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="14s" repeatCount="indefinite" />
+    <animateMotion dur="14s" repeatCount="indefinite"><mpath href="#orbit-earth"/></animateMotion>
+    <circle fill="url(#gradEarth)"><animate attributeName="r" values="9; 4.5; 9; 14; 9" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="14s" repeatCount="indefinite" /></circle>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="20s" repeatCount="indefinite" />
+    <animateMotion dur="20s" repeatCount="indefinite"><mpath href="#orbit-mars"/></animateMotion>
+    <circle fill="url(#gradMars)"><animate attributeName="r" values="7; 3.5; 7; 11; 7" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="20s" repeatCount="indefinite" /></circle>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="32s" repeatCount="indefinite" />
+    <animateMotion dur="32s" repeatCount="indefinite"><mpath href="#orbit-jupiter"/></animateMotion>
+    <circle fill="url(#gradJupiter)"><animate attributeName="r" values="20; 10; 20; 30; 20" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="32s" repeatCount="indefinite" /></circle>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="45s" repeatCount="indefinite" />
+    <animateMotion dur="45s" repeatCount="indefinite"><mpath href="#orbit-saturn"/></animateMotion>
     <g>
-      <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="8s" repeatCount="indefinite" />
-      <animateMotion dur="8s" repeatCount="indefinite"><mpath href="#orbit-venus"/></animateMotion>
-      <circle fill="url(#gradVenus)"><animate attributeName="r" values="6; 3; 6; 9; 6" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="8s" repeatCount="indefinite" /></circle>
+      <animateTransform attributeName="transform" type="scale" values="1; 0.5; 1; 1.5; 1" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="45s" repeatCount="indefinite" />
+      <ellipse cx="0" cy="0" rx="30" ry="10" fill="none" stroke="rgba(252,211,77,0.7)" stroke-width="4" transform="rotate(-20)" />
+      <circle cx="0" cy="0" r="14" fill="url(#gradSaturn)" />
     </g>
-    <g>
-      <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="14s" repeatCount="indefinite" />
-      <animateMotion dur="14s" repeatCount="indefinite"><mpath href="#orbit-earth"/></animateMotion>
-      <circle fill="url(#gradEarth)"><animate attributeName="r" values="9; 4.5; 9; 14; 9" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="14s" repeatCount="indefinite" /></circle>
-    </g>
-    <g>
-      <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="20s" repeatCount="indefinite" />
-      <animateMotion dur="20s" repeatCount="indefinite"><mpath href="#orbit-mars"/></animateMotion>
-      <circle fill="url(#gradMars)"><animate attributeName="r" values="7; 3.5; 7; 11; 7" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="20s" repeatCount="indefinite" /></circle>
-    </g>
-    <g>
-      <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="32s" repeatCount="indefinite" />
-      <animateMotion dur="32s" repeatCount="indefinite"><mpath href="#orbit-jupiter"/></animateMotion>
-      <circle fill="url(#gradJupiter)"><animate attributeName="r" values="20; 10; 20; 30; 20" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="32s" repeatCount="indefinite" /></circle>
-    </g>
-    <g>
-      <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="45s" repeatCount="indefinite" />
-      <animateMotion dur="45s" repeatCount="indefinite"><mpath href="#orbit-saturn"/></animateMotion>
-      <g>
-        <animateTransform attributeName="transform" type="scale" values="1; 0.5; 1; 1.5; 1" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="45s" repeatCount="indefinite" />
-        <ellipse cx="0" cy="0" rx="30" ry="10" fill="none" stroke="rgba(252,211,77,0.7)" stroke-width="4" transform="rotate(-20)" />
-        <circle cx="0" cy="0" r="14" fill="url(#gradSaturn)" />
-      </g>
-    </g>
-
   </g>
 </svg>
