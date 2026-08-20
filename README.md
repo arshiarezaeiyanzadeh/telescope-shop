@@ -2,6 +2,11 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1128,25:16233F,50:1B3A6B,75:2C5F9B,100:4A7FBF&height=150&section=header&v=3" width="100%" />
 </p>
 
+
+<p align="center">
+  <img src="solar-system.svg?v=1" width="100%" />
+</p>
+
 <div align="center">
 <h1 style="font-family: 'Poppins', sans-serif; color: #a855f7;">🌌 Telescope shop 🔭</h1>
 <p align="center">
@@ -10,9 +15,6 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="solar-system.svg?v=1" width="100%" />
-</p>
 
 <p style="font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 1.8; max-width: 800px; margin: 0 auto;">
 Welcome to my very first web development project! Built entirely from scratch using pure <b>HTML5</b> and <b>CSS3</b>, this project is a fully responsive e-commerce platform designed for astronomy enthusiasts and high-end telescope buyers.
