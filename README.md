@@ -8,7 +8,7 @@
 
 <div align="center">
 
-<h1 style="font-size: 56px; font-weight: 900; color: #0071FF; margin: 20px 0 5px 0; letter-spacing: 1px;"><b>🌌 Telescope shop 🔭</b></h1>
+<h3 style="font-size: 56px; font-weight: 900; color: #0071FF; margin: 20px 0 5px 0; letter-spacing: 1px; border-bottom: none;"><b>🌌 Telescope shop 🔭</b></h3>
 
 <p align="center" style="margin: 5px 0 25px 0;">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1128,25:16233F,50:1B3A6B,75:2C5F9B,100:4A7FBF&height=4" width="100%" />
@@ -30,7 +30,7 @@ Welcome to my very first web development project! Built entirely from scratch us
 </p>
 <br>
 
-<h2 style="font-size: 42px; font-weight: 900; color: #0071FF; margin: 15px 0;"><b>🛠️ Built With</b></h2>
+<h3 style="font-size: 42px; font-weight: 900; color: #0071FF; margin: 15px 0; border-bottom: none;"><b>🛠️ Built With</b></h3>
 <p>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
@@ -43,7 +43,7 @@ Welcome to my very first web development project! Built entirely from scratch us
 </p>
 <br>
 
-<h2 style="font-size: 42px; font-weight: 900; color: #0071FF; margin: 15px 0 25px 0;"><b>📸 Project Previews</b></h2>
+<h3 style="font-size: 42px; font-weight: 900; color: #0071FF; margin: 15px 0 25px 0; border-bottom: none;"><b>📸 Project Previews</b></h3>
 
 <h3 style="font-size: 26px; font-weight: 700; color: #4A9DFF; margin: 25px 0 12px 0;"><b>🏠 Home Page</b></h3>
 <br>
@@ -71,7 +71,7 @@ Welcome to my very first web development project! Built entirely from scratch us
 </p>
 <br>
 
-<h2 style="font-size: 42px; font-weight: 900; color: #0071FF; margin: 15px 0 20px 0;"><b>✨ Key Highlights</b></h2>
+<h3 style="font-size: 42px; font-weight: 900; color: #0071FF; margin: 15px 0 20px 0; border-bottom: none;"><b>✨ Key Highlights</b></h3>
 <div style="display: inline-block; text-align: left; padding: 10px; font-size: 18px; line-height: 1.9;">
   <p>✔️ <b>100% Custom Design & Layout:</b> Designed with full creative freedom, featuring a cosmic black hole visual effect, dark glassmorphism cards, and modern layout aesthetics.</p>
   <p>✔️ <b>Fully Responsive:</b> Seamlessly adapts to all screen sizes—from mobile devices to ultra-wide monitors.</p>
@@ -84,7 +84,7 @@ Welcome to my very first web development project! Built entirely from scratch us
 </p>
 <br>
 
-<h2 style="font-size: 42px; font-weight: 900; color: #0071FF; margin: 15px 0 20px 0;"><b>📂 File Structure</b></h2>
+<h3 style="font-size: 42px; font-weight: 900; color: #0071FF; margin: 15px 0 20px 0; border-bottom: none;"><b>📂 File Structure</b></h3>
 <div align="left" style="max-width: 680px; margin: 0 auto; background-color: #0d1117; padding: 25px; border-radius: 12px; border: 1px solid rgba(0, 113, 255, 0.4); box-shadow: 0 8px 25px rgba(0, 113, 255, 0.25);">
 <pre style="color: #c9d1d9; font-size: 16px; font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; background: transparent; border: none; margin: 0; padding: 0; line-height: 1.6;">
 📦 telescope-shop
