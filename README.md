@@ -8,7 +8,7 @@
 
 <div align="center">
 
-<h1 style="font-size: 52px; font-weight: 900; color: #0071FF; margin: 20px 0 10px 0; border-bottom: 3px solid #0071FF; padding-bottom: 12px; display: inline-block;">
+<h1 style="font-size: 52px; font-weight: 900; color: #0071FF; margin: 20px 0 10px 0; border-bottom: 4px solid #0071FF; padding-bottom: 12px; display: inline-block;">
   🌌 Telescope shop 🔭
 </h1>
 
@@ -24,10 +24,9 @@ Welcome to my very first web development project! Built entirely from scratch us
 
 <br>
 
-<h2 style="font-size: 38px; font-weight: 900; color: #0071FF; margin: 30px 0 20px 0; border-bottom: 3px solid #0071FF; padding-bottom: 10px;">
+<h2 style="font-size: 38px; font-weight: 900; color: #0071FF; margin: 30px 0 20px 0; border-bottom: 3px solid #0071FF; padding-bottom: 10px; display: inline-block;">
   🛠️ Built With
 </h2>
-
 <p>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
@@ -36,7 +35,7 @@ Welcome to my very first web development project! Built entirely from scratch us
 
 <br>
 
-<h2 style="font-size: 38px; font-weight: 900; color: #0071FF; margin: 35px 0 25px 0; border-bottom: 3px solid #0071FF; padding-bottom: 10px;">
+<h2 style="font-size: 38px; font-weight: 900; color: #0071FF; margin: 35px 0 25px 0; border-bottom: 3px solid #0071FF; padding-bottom: 10px; display: inline-block;">
   📸 Project Previews
 </h2>
 
@@ -68,7 +67,7 @@ Welcome to my very first web development project! Built entirely from scratch us
 <img src="photo_2026-08-11_01-17-10.jpg-login.jpg" alt="Login Page" width="850" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(0, 113, 255, 0.4); margin-bottom: 30px;" />
 <br><br>
 
-<h2 style="font-size: 38px; font-weight: 900; color: #0071FF; margin: 35px 0 20px 0; border-bottom: 3px solid #0071FF; padding-bottom: 10px;">
+<h2 style="font-size: 38px; font-weight: 900; color: #0071FF; margin: 35px 0 20px 0; border-bottom: 3px solid #0071FF; padding-bottom: 10px; display: inline-block;">
   ✨ Key Highlights
 </h2>
 
@@ -80,7 +79,7 @@ Welcome to my very first web development project! Built entirely from scratch us
 
 <br><br>
 
-<h2 style="font-size: 38px; font-weight: 900; color: #0071FF; margin: 35px 0 20px 0; border-bottom: 3px solid #0071FF; padding-bottom: 10px;">
+<h2 style="font-size: 38px; font-weight: 900; color: #0071FF; margin: 35px 0 20px 0; border-bottom: 3px solid #0071FF; padding-bottom: 10px; display: inline-block;">
   📂 File Structure
 </h2>
 
