@@ -2,10 +2,6 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1128,25:16233F,50:1B3A6B,75:2C5F9B,100:4A7FBF&height=150&section=header&v=3" width="100%" />
 </p>
 
-<p align="center">
-  <img src="solar-system.svg?v=3" width="100%" />
-</p>
-
 <div align="center">
 
 <h1 style="font-size: 52px; font-weight: 900; color: #0071FF; margin: 20px 0 15px 0;">🌌 Telescope shop 🔭</h1>
