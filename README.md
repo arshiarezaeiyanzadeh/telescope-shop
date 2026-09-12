@@ -111,5 +111,5 @@ Welcome to my very first web development project! Built entirely from scratch us
 </div>
 
 <p align="center">
-  <img src="footer.svg?v=1" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1128,25:16233F,50:1B3A6B,75:2C5F9B,100:4A7FBF&height=150&section=footer&v=3" width="100%" />
 </p>
